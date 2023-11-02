@@ -3,6 +3,9 @@
 * {
     padding: 0;
     margin: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 body{
@@ -10,12 +13,12 @@ body{
 }
 
 h1 {
+    padding-left: 10vw;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3.4rem;
     color: white;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-left: 3vw;
+    padding-right: 1vw;
+    white-space: nowrap;
 }
 
 .cart img{
@@ -25,14 +28,16 @@ h1 {
 }
 main{
     padding-top: 6rem;
-    height: 100vh;
     width: 100vw;
+    height: 100vw;
     background-image: url("images/background-img.jpg");
 }
 
 
 
 nav{
+    justify-content: start;
+    align-items: center;
     background-color: #4CBB17;
     position: fixed;
     top: 0;
@@ -40,7 +45,6 @@ nav{
     width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-content: center;
 }
 
@@ -54,16 +58,17 @@ nav{
 
 .catalog{
     text-decoration: none;
-    font-weight: 0;
     color: white;
+    font-weight: bold;
 }
 
 
 .slogan{
+    margin-right: auto;
     color: black;
     padding-left: 4rem;
     padding-top: 10rem;
-    padding-right: 60vw;
+    flex-direction: inherit;
     font-family: 'Comfortaa', sans-serif;
 }
 
@@ -84,6 +89,7 @@ h2{
 }
 
 .nav-list{
+    white-space: nowrap;
     margin-left: 2vw;
     font-family: 'Comfortaa', sans-serif;
     font-size: 2em;
@@ -93,3 +99,44 @@ h2{
     padding: 3px;
     background: transparent;
 }
+
+@media (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-bar {
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .catalog {
+        margin-top: 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+
+    .slogan {
+        padding: 2rem;
+    }
+
+    h2 {
+        padding-top: 30vw;
+        font-size: 2rem;
+        word-spacing: 0.2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .text-under-h2 {
+        line-height: 1.2rem;
+    }
+}
+
+
