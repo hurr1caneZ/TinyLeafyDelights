@@ -55,6 +55,11 @@ nav{
     text-decoration: none;
     color: white;
     font-weight: bold;
+
+}
+
+.catalog-item{
+    в
 }
 
 .turtle{
@@ -108,6 +113,41 @@ h2{
     margin-right: 5px;
 
 }
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    overflow-x: auto;
+
+}
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+.responsive-table th, .responsive-table td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.responsive-table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.odd-row {
+    background-color: #f2f2f2;
+}
+
+.even-row {
+    background-color: #e0e0e0;
+}
+
 
 @media (max-width: 1280px) {
     nav {
