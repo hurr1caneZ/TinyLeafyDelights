@@ -1,0 +1,153 @@
+
+*{
+    background-color: #B4E197;
+}
+
+/*КНОПКИ*/
+
+.email-input{
+    display: inline-block;
+    color: white;
+    font-size: 160%;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    padding: 6px 20px;
+    overflow: hidden;
+    font-family: "Arial Black", serif;
+}
+
+.password-input{
+    display: inline-block;
+    color: white;
+    font-size: 160%;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    padding: 6px 20px;
+    overflow: hidden;
+    font-family: "Arial Black", serif;
+}
+
+.submit-login{
+    display: inline-block;
+    color: white;
+    font-size: 160%;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    padding: 6px 20px;
+    overflow: hidden;
+    font-family: "Arial Black", serif;
+}
+
+.redirect-to-main{
+    display: inline-block;
+    color: white;
+    font-size: 160%;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    padding: 6px 20px;
+    overflow: hidden;
+    font-family: "Arial Black", serif;
+}
+
+
+
+
+
+/*КОНТЕЙНЕРЫ*/
+
+.redirect-to-main-container{
+    font-size: 210%;
+    margin-left: 23.5em;
+}
+
+.registration-container{
+    margin: 0 auto;
+    width: 50%;
+    padding: 20em;
+    text-align: center;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+/*ХОВЕРЫ*/
+
+.redirect-to-main:hover{
+    background-color: #90B478;
+    box-shadow: 3px 3px black;
+}
+
+#email:hover{
+    background-color: #90B478;
+    box-shadow: 3px 3px black;
+}
+
+#password:hover{
+    background-color: #90B478;
+    box-shadow: 3px 3px black;
+}
+
+#submit:hover{
+    background-color: #90B478;
+    box-shadow: 3px 3px black;
+}
+
+/*ТАБЛИЦА*/
+
+.responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+
+.responsive-table th, .responsive-table td {
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.responsive-table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.odd-row {
+    background-color: #f2f2f2;
+}
+
+.even-row {
+    background-color: #e0e0e0;
+}
+
+
+
+/* ДРУГИЕ РАЗРЕШЕНИЯ */
+
+@media(max-width: 414px){
+    .registration-container{
+        /*border: 5px solid;*/
+        margin-top: 20em;
+        width: 70%;
+        padding: 10px;
+    }
+
+    .email-input, .password-input{
+        height: 10vw;
+        width: 50vw;
+    }
+
+    .table-container{
+        padding-top: 100em;
+    }
+}
