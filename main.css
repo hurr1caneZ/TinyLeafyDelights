@@ -298,6 +298,10 @@ h2{
         -webkit-text-stroke: 2px black;
     }
 
+    *{
+        overflow-x: hidden;
+    }
+
 }
 
 
@@ -351,6 +355,8 @@ h2{
         padding-top: 10em;
     }
 
-
+    *{
+        overflow-x: hidden;
+    }
 }
 
