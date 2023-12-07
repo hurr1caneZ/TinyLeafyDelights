@@ -216,6 +216,37 @@ h2{
     margin-right: 5px;
 }
 
+
+
+.nav-list:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #fff;
+    width: 150px;
+    margin: 0 auto 10px;
+    transition: 1s;
+}
+.nav-list:hover:before {
+    width: 250px;
+    transition: ease-out 1s;
+}
+
+
+.nav-list:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #fff;
+    width: 150px;
+    margin: 10px auto 0;
+    transition: 1s;
+}
+.nav-list:hover:after {
+    width: 250px;
+    transition: ease-out 1s;
+}
+
 .about-microgreen-container{
     font-family: 'Comfortaa', sans-serif;
     text-align: center;
