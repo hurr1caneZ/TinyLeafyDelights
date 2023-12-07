@@ -39,7 +39,7 @@ body{
     padding-top: 10rem;
     width: 100vw;
     height: 100vh;
-    background-image: url("../images/background-img.jpg");
+    background-image: url("images/background-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -47,7 +47,7 @@ body{
 .second-page{
     width: 100vw;
     height: 120vh;
-    background-image: url("../images/background-img2.jpg");
+    background-image: url("images/background-img2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
