@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="registration.css">
 
     <title>Registration</title>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </head>
 
 
@@ -35,39 +35,37 @@
 
 </div>
 
-<p id="loading-info"></p>
-
-<div class="table-container">
-
-    <table class="responsive-table">
-        <caption>Заголовок таблицы</caption>
+    <table id="grid-table">
         <thead>
-        <tr>
-            <th>Заголовок 1</th>
-            <th>Заголовок 2</th>
-            <th>Заголовок 3</th>
+        <tr class="grid-table-tr">
+            <th class="grid-table-th" data-type="numeric">ID <span class="resize-handle"></span></th>
+            <th class="grid-table-th" data-type="text-short">First name <span class="resize-handle"></span></th>
+            <th class="grid-table-th" data-type="text-short">Last name <span class="resize-handle"></span></th>
         </tr>
         </thead>
         <tbody>
-        <tr class="odd-row">
-            <td>Ячейка 1</td>
-            <td>Ячейка 2</td>
-            <td>Ячейка 3</td>
+        <tr class="grid-table-tr">
+            <td class="grid-table-td">123</td>
+            <td class="grid-table-td">vlad</td>
+            <td class="grid-table-td">shisha</td>
         </tr>
-        <tr class="even-row">
-            <td>Ячейка 4</td>
-            <td>Ячейка 5</td>
-            <td>Ячейка 6</td>
+        <tr class="grid-table-tr">
+            <td class="grid-table-td">234</td>
+            <td class="grid-table-td">oleg</td>
+            <td class="grid-table-td">mongol</td>
+        </tr>
+        <tr class="grid-table-tr">
+            <td class="grid-table-td">345</td>
+            <td class="grid-table-td">ivan</td>
+            <td class="grid-table-td">german</td>
         </tr>
         </tbody>
     </table>
 
-</div>
+<p id="loading-info"></p>
 <body>
 
-<video id="fullscreen-video" controls>
-    <source src="images/your-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
 </body>
 </html>
+
+<!--TODO: gap от margin отличие, grid табличку на флексах сделать, рассказать reapeat auto fill min max grid template columns в grid-kaif-->
