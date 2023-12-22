@@ -8,4 +8,29 @@ function measurePageLoadTime() {
         console.error("Элемент с id 'loading-info' не найден");
     }
 }
+
 window.addEventListener("load", measurePageLoadTime);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navButtons = document.querySelectorAll(".nav-buttons");
+
+    navButtons.forEach(function (navButton) {
+        navButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Убираем подчеркивание у всех элементов
+            navButtons.forEach(function (button) {
+                button.classList.remove("clicked");
+            });
+
+            // Добавляем подчеркивание только для текущего элемента
+            this.classList.add("clicked");
+
+            // Получаем ссылку из атрибута href и переходим на страницу
+            const targetPage = this.getAttribute("href");
+            if (targetPage) {
+                window.location.href = targetPage;
+            }
+        });
+    });
+});

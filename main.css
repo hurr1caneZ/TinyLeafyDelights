@@ -180,6 +180,14 @@ nav{
     color: white;
 }
 
+.nav-buttons:hover{
+    color: #8ef54b;
+}
+
+.nav-buttons.clicked{
+    text-decoration: underline;
+}
+
 .nav-logo{
     padding-right: 3em;
     display: grid;
@@ -231,34 +239,8 @@ h2{
 
 
 
-.nav-list:before {
-    content: '';
-    display: block;
-    height: 1px;
-    background: #fff;
-    width: 150px;
-    margin: 0 auto 10px;
-    transition: 1s;
-}
-.nav-list:hover:before {
-    width: 250px;
-    transition: ease-out 1s;
-}
 
 
-.nav-list:after {
-    content: '';
-    display: block;
-    height: 1px;
-    background: #fff;
-    width: 150px;
-    margin: 10px auto 0;
-    transition: 1s;
-}
-.nav-list:hover:after {
-    width: 250px;
-    transition: ease-out 1s;
-}
 
 .about-microgreen-container{
     font-family: 'Comfortaa', sans-serif;
