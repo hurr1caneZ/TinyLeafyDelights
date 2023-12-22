@@ -14,23 +14,28 @@ window.addEventListener("load", measurePageLoadTime);
 document.addEventListener("DOMContentLoaded", function () {
     const navButtons = document.querySelectorAll(".nav-buttons");
 
-    navButtons.forEach(function (navButton) {
-        navButton.addEventListener("click", function (event) {
+    for (let i = 0; i < navButtons.length; i++) {
+        navButtons[i].addEventListener("click", function (event) {
             event.preventDefault();
 
             // Убираем подчеркивание у всех элементов
-            navButtons.forEach(function (button) {
-                button.classList.remove("clicked");
-            });
+            for (let j = 0; j < navButtons.length; j++) {
+                navButtons[j].classList.remove("clicked");
+            }
 
             // Добавляем подчеркивание только для текущего элемента
             this.classList.add("clicked");
 
-            // Получаем ссылку из атрибута href и переходим на страницу
+            // Получаем ссылку из атрибута href
             const targetPage = this.getAttribute("href");
-            if (targetPage) {
-                window.location.href = targetPage;
+
+            // Проверяем, находимся ли мы уже на этой странице
+            if (targetPage && document.location.pathname === targetPage) {
+                this.classList.add("clicked");
+            } else {
+                // Иначе переходим на новую страницу
+                document.location.href = targetPage;
             }
         });
-    });
+    }
 });
