@@ -237,11 +237,6 @@ h2{
     margin-right: 5px;
 }
 
-
-
-
-
-
 .about-microgreen-container{
     font-family: 'Comfortaa', sans-serif;
     text-align: center;
@@ -253,6 +248,10 @@ h2{
     display: flex;
     justify-content: right;
     margin-top: 10em;
+}
+
+.active-state{
+    color: black;
 }
 
 .pairs{
