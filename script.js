@@ -10,11 +10,11 @@ function measurePageLoadTime() {
 }
 
 window.addEventListener("load", measurePageLoadTime);
-document.addEventListener("DOMContentLoaded", function() {console.log(1)
+document.addEventListener("DOMContentLoaded", function () {
     let navbar = document.querySelector('.nav-bar').children;
     for (let i = 0; i < navbar.length; i++) {
         if (document.location["href"] === navbar[i].children[0].href) {
-           navbar[i].children[0].classList.add('active-state');
+            navbar[i].children[0].classList.add('active-state');
         }
     }
 });

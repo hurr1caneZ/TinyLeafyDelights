@@ -6,35 +6,43 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="registration.css">
-
+    <link rel="stylesheet" href="main.css">
     <title>Registration</title>
     <script src="script.js"></script>
+    <script src="registration.js"></script>
 </head>
+<body>
 
+<header>
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-list"><a class="nav-buttons" href="index.html">Tiny Leafy Delights</a></li>
+            <li class="nav-list"><a class="nav-buttons" href="index.html">Главная</a></li>
+            <li class="nav-list"><a class="nav-buttons" href="#">Каталог</a></li>
+            <li class="nav-list"><a class="nav-buttons" href="feedbacks.html">Отзывы</a></li>
+            <li class="nav-list"><a class="nav-buttons" href="#">Доставка</a></li>
+            <li class="nav-list"><a class="nav-buttons" href="">Личный кабинет</a></li>
+        </ul>
+    </nav>
+</header>
 
-
-<div class="redirect-to-main-container">
-    <button class="redirect-to-main" onclick="document.location='index.html'">Главная</button>
-</div>
-
-<div class="registration-container">
-    <form id="registration-form" onsubmit="mockFetch(); return false;">
-        <div class="form-group-email">
-            <label for="email"></label>
-            <input type="email" class="email-input" id="email" name="email" required placeholder="Email">
+<main>
+    <div class="reg-container">
+        <div class="form-container">
+            <form>
+                <span class="sign-in">Sign in</span>
+                <label for="email"></label>
+                <input type="email" placeholder="Login" class="email" id="email">
+                <label for="password"></label>
+                <input type="password" placeholder="Password" class="password" id="password">
+            </form>
+            <button type="submit" class="sign-button">Sign in</button>
         </div>
-        <br>
-        <div class="form-group-password">
-            <label for="password"></label>
-            <input type="password" id="password" class="password-input" name="password" placeholder="Password">
-        </div>
-        <br>
-        <button type="submit" id="submit" class="submit-login" onclick="mockFetch()">Log in</button>
+    </div>
+</main>
 
-    </form>
 
-</div>
-
+<footer>
     <table id="grid-table">
         <thead>
         <tr class="grid-table-tr">
@@ -61,11 +69,7 @@
         </tr>
         </tbody>
     </table>
-
-<p id="loading-info"></p>
-<body>
-
+    <p id="loading-info"></p>
+</footer>
 </body>
 </html>
-
-<!--TODO: gap от margin отличие, grid табличку на флексах сделать, рассказать reapeat auto fill min max grid template columns в grid-kaif-->
