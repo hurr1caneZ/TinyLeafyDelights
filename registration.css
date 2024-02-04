@@ -76,7 +76,16 @@ input:focus {
     margin-left: -0.5em;
 }
 
-.sign-button {
+form {
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.submit-button {
     margin-top: 20em;
     font-family: "Ubuntu", serif;
     font-weight: 700;
@@ -91,7 +100,7 @@ input:focus {
     position: absolute;
 }
 
-.sign-button:hover{
+.submit-button:hover {
     background-color: #1b3815;
 }
 

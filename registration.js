@@ -19,12 +19,3 @@ document.addEventListener('DOMContentLoaded', function () {
         password.style.width = '25em';
     });
 });
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-   const button = document.querySelector('.sign-button');
-   button.addEventListener('click', function (){
-      console.log('кнопку нажали');
-   });
-});
