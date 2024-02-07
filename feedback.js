@@ -8,6 +8,7 @@ feedbackForm.addEventListener("submit", (e) => {
         let feedbackList = JSON.parse(localStorage.getItem("feedbacks") || '[]');
         feedbackList.push(feedback);
         localStorage.setItem("feedbacks", JSON.stringify(feedbackList));
+        document.getElementById("feedback").value = "";
         Toastify({
             text: "Отзыв успешно добавлен", // текст внутри уведомления
             close: true, // возможность закрытия уведомления
@@ -37,5 +38,4 @@ function createFeedback(feedback) {
     clone.children[0].textContent = feedback;
     return clone;
 }
-
 
